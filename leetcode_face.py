@@ -12,6 +12,7 @@ class TreeNode(object):
         self.right = right
 
 class Tree(object):
+
     """
     树的类:
         初始树都有一个根节点，并且根节点默认不链接任何节点
