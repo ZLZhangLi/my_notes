@@ -31,6 +31,7 @@ class Tree(object):
 
     # 平衡二叉树【遇到1次】
     def isBalanced(self, root):
+
         # 差值大于1，就是非平衡二叉树
         def treeDepth(root):
             if not root:
