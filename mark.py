@@ -2,9 +2,8 @@
 def lengthOfLIS(nums):
     if not nums:
         return 0
-    dp = []
+    dp = [1 for _ in range(nums)]
     for i in range(len(nums)):
-        dp.append(i)
         for j in range(i):
             if nums[j] < nums[i]:
                 dp[i] = max(dp[i], dp[j] + 1)
